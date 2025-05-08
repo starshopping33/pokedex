@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #ffffffa9;
+   
+}
+.pokemon_local {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    box-shadow: 0px 0px 25px -5px rgba(183, 189, 193, 0.4);
+    border-radius: 12px;
+    text-align: center;
+    margin: 0px 10px 10px 0px;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 12px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+
+}
+.add {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    cursor: pointer;
+}
+.add img {
+    width: 100%;
+}
+
+img{
+    background-color: #cdcbcb;
+    padding: 12px;
+    height: 200px;
+    border-radius: 8px;
+    gap: 12px;
+}
+.base{
+    display: flex
+    ;
+        justify-content: center;
+        padding: 12px;
+}
+.nomea{
+    display: flex
+    ;
+        justify-content: center;
+        padding: 12px;
+}
+.abilities{
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4px;
+        padding: 4px;
+    
+}
