@@ -1,0 +1,109 @@
+body {
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ecfff0;
+}
+
+.login {
+    background-color: white;
+    border-radius: 12px;
+    width: 400px;
+    padding: 24px;
+    box-shadow: 0px 0px 25px -5px rgba(183, 189, 193, 0.4);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 300px;
+}
+
+h1 {
+    color: #313131;
+    font-size: 24px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+fieldset label {
+    color: #666;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    display: block;
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 0 16px;
+    font-size: 14px;
+    color: #313131;
+    transition: border-color 0.2s ease;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+    border-color: #1091d6;
+}
+
+button {
+    background-color: #1091d6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: #0c74ab;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.toastify {
+    padding: 12px 20px;
+    color: white;
+    font-size: 14px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.toastify.success {
+    background: linear-gradient(to right, #00b09b, #96c93d);
+}
+
+.toastify.error {
+    background: linear-gradient(to right, #ff5f6d, #ffc371);
+}
