@@ -82,3 +82,32 @@ async function nextPage(){
    
     }
 }
+
+function montarHeader(){
+    const header = document.querySelector("header")
+    const user = localStorage.getItem("token")
+    if(user){
+        header.insertAdjacentHTML("beforeend",`
+            <a id="logout" href="/">Sair</a>
+           
+            
+            `)
+            const logout = document.querySelector("#logout")
+            logout.addEventListener("click",()=>{
+                localStorage.clear()
+                header.innerHTML = ""
+                header.insertAdjacentHTML("beforeend",`
+                    <a href="/login/">Login</a>
+                    <a href="/cadastro/">Cadastro</a>
+                    
+                    `)
+            })
+    }else {
+        header.insertAdjacentHTML("beforeend",`
+            <a href="/login/">Login</a>
+            <a href="/cadastro/">Cadastro</a>
+            
+            `)
+    }
+}
+montarHeader()
